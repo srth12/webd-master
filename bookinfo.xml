@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookdb>
+<book id=1>
+<Title>
+And Quiet Flows the Don
+</Title>
+<Author>
+Mikhail Sholokhov
+</Author>
+<Publisher>
+Alfred.A.Knopf
+</Publisher>
+<Genre>
+Novel
+</Genre>
+<Year>
+1934
+</Year>
+<Description>
+"And Quiet Flows the Don" is the first part of the "Don" epic("The Queit Don") written by Michail Sholokhov.It originally appeared in serialized form between 1928 and 1940. The English translation of the first part was released under this title in the year 1934. The novel is considered as one of the masterpieces in the Soviet Literature. The novel won the Stalin Prize in 1941 and the Auther was awarded nobel prize in Literature in 1965.
+</Description>
+</book>
+<book id=2>
+<Title>
+Engines of Creation:The Coming Era of Nano Technology
+</Title>
+<Author>
+K.Eric Drexler
+</Author>
+<Publisher>
+Doubleday
+</Publisher>
+<Genre>
+Science and Technology
+</Genre>
+<Year>
+1986
+</Year>
+<Description>
+Engines of Creation: The Coming Era of Nanotechnology is a 1986 molecular nanotechnology book written by K. Eric Drexler with a foreword by Marvin Minsky. An updated version was released in 2007. The book has been translated into Japanese, French, Spanish, Italian, Russian, and Chinese.
+Through the book Drexler also shares his views regarding Malthusian Hypothesis and Extraterrestrial Intelligence.
+</Description>
+</book>
+<book id=3>
+<Title>
+Wings of Fire
+</Title>
+<Author>
+Dr.A.P.J.Abdulkalam
+</Author>
+<Publisher>
+Universities Press
+</Publisher>
+<Genre>
+Autobiography
+</Genre>
+<Year>
+1999
+</Year>
+<Description>
+"Wings of Fire" is an autobiography of Dr.A.P.J.Abdulkalam former presisent of India. It was written by Dr.Kalam and Arun Tiwary.Kalam examines his early life, effort, hardship, fortitude, luck and chance that eventually led him to lead Indian space research,nuclear and missile programs.
+</Description>
+</book>
+<book id=4>
+<Title>
+The Structure of Scientific Revolutions
+</Title>
+<Author>
+Thomas.S.Kuhn
+</Author>
+<Publisher>
+University of Chicago Press
+</Publisher>
+<Genre>
+Science and Technology
+</Genre>
+<Year>
+1962
+</Year>
+<Description>
+"The Structure of Scientific Revolutions by Thomas.S.Kuhn is an analysis of the history of science. Its publication was landmark event in the history, philosophy, and sociology of scientific knowledge and it triggered an ongoing worldwide assessment and reaction in—and beyond—those scholarly communities. In this work, Kuhn challenged the then prevailing view of progress in "normal science". Scientific progress had been seen primarily as "development-by-accumulation" of accepted facts and theories. Kuhn argued for an episodic model in which periods of such conceptual continuity in normal science were interrupted by periods of revolutionary science. During revolutions in science the discovery of anomalies leads to a whole new paradigm that changes the rules of the game and the "map" directing new research, asks new questions of old data, and moves beyond the puzzle-solving of normal science. 
+Kuhn called the core concepts of an ascendant revolution its "paradigms" and thereby launched this word into widespread analogical use in the second half of the 20th century. Kuhn's insistence that a paradigm shift was a mélange of sociology, enthusiasm and scientific promise, but not a logically determinate procedure, caused an uproar in reaction to his work. Kuhn addressed concerns in the 1969 postscript to the second edition.
+</Description>
+</book>
+<book id=5>
+<Title>
+The Good Earth
+</Title>
+<Author>
+Pearl S.Buck
+</Author>
+<Publisher>
+John Day
+</Publisher>
+<Genre>
+Novel
+</Genre>
+<Year>
+1931
+</Year>
+<Description>
+"The Good Earth" written by Pearl.S.Buck is one of the masterpieces in American Literature. The Novel was met with overwhelming critical acclaim and it won Buck the Pulitzer Prize in 1932. Buck also wrote two sequals to the novel "Sons"(1932) and "A House Devided"(1935). The trilogy was key to Buck being awaded the Nobel Prize for literature in 1938.Buck is only the fourth woman to win the Award.
+The book was the best seller in U.S.A in the early 1930s. And returned to the Best-Seller charts in 2004 when it was chosen by  television host Oprah Winfrey for Oprah's Book Club.The book is considered to have had huge influence in the American society.
+</Description>
+</book>
+<book id=6>
+<Title>
+The White Tiger
+</Title>
+<Author>
+Aravind Adiga
+</Author>
+<Publisher>
+Harper Collins,India
+</Publisher>
+<Genre>
+Novel
+</Genre>
+<Year>
+2008
+</Year>
+<Description>
+"The White Tiger" is the first novel written by Aravind Adiga.The novel won the 40th Man Booker Prize in the same year, making the author the at 33 years of age the second youngest and only the fourth debutant to win the award. The novel provides a darkly humerous perspective of India's Class struggle in a globalized world. And was well recived by readers and critics alike instantly.The novel also discusses the Americanization of India and also the Caste system prevailing in the country.
+</Description>
+</book>
+<book id=7>
+<Title>
+Sunderkand:Triumph of Hanuman
+</Title>
+<Author>
+
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+<book id=8>
+<Title>
+Krishna:A journey within
+</Title>
+<Author>
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+<book id=9>
+<Title>
+marvel:The avengers movie special
+</Title>
+<Author>
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+<book id=10>
+<Title>
+Mahabharatha
+</Title>
+<Author>
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+<book id=11>
+<Title>
+Batman:Dark Victory
+</Title>
+<Author>
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+<book id=12>
+<Title>
+</Title>
+<Author>
+</Author>
+<Publisher>
+</Publisher>
+<Genre>
+</Genre>
+<Year>
+</Year>
+<Description>
+</Description>
+</book>
+</bookdb>

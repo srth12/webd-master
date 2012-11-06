@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+color:orange;
+text-align:center;
+background-color:#33CC99;
+}
+p
+{
+font-family:"Times New Roman";
+font-size:20px;
+}
