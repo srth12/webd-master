@@ -8,12 +8,13 @@
 <title>Sign Up</title>
 
 <?php
+if(isset($_GET["q"])){echo "Incorrect password, Try signup...";}
 if(isset($_REQUEST["submit"])){
 $name=$_REQUEST["name"];
 $username=$_REQUEST["username"];
 $password=$_REQUEST["password"];
 mysql_connect("localhost","","") or die("could not connect to db stopping...");
-mysql_select_db("books") or die(" database selection failed");
+mysql_select_db("test") or die(" database selection failed");
 $che="select * from book_user where username='".$username."'";
 $check=mysql_query($che) or die("Query failed1");
 
@@ -23,7 +24,7 @@ if(($res=mysql_num_rows($check))!=0){
 
 	}
 	else{ 
-	$query="insert into book_user values('$name','$password') ";
+	$query="insert into book_user values('$username','$password','$name') ";
 	mysql_query($query) or die("Sign Up failed Try again later...");
 	session_start();
 	$_SESSION["username"]=$name;

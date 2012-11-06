@@ -29,7 +29,11 @@ mysql_select_db("test") or die(" database selection failed");
 $search=$_GET["id"];
 $search=$search;
 connectdb();
-$query="select * from book_details where title like '%".$search."%' ";
+if($_GET["q"]==1){
+$query="select * from book_details where image_url like '%".$search."%'";
+}
+else{
+$query="select * from book_details where title like '%".$search."%' ";}
 $res=mysql_query($query) or die("searching failed... ");
 if($res and !mysql_num_rows($res)){
 die("Content not found");

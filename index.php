@@ -5,9 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Book360Deg.com</title>
 <?php
+session_start();
 function connectdb(){
 
-mysqli_connect("localhost","","") or die("could not connect to db stopping...");
+mysql_connect("localhost","","") or die("could not connect to db stopping...");
 mysql_select_db("test") or die(" database selection failed");
 
 }
@@ -29,11 +30,27 @@ return $value;
 if(isset($_REQUEST["login"])){
 //echo $_REQUEST["username"];
 
+connectdb();
+$username=$_REQUEST["username"];
+$password=$_REQUEST["password"];
+mysql_connect("localhost","","") or die("could not connect to db stopping...");
+mysql_select_db("test") or die(" database selection failed");
 
-$username=check_input($_REQUEST["username"]);
-$password=check_input($_REQUEST["password"]);
+$che="select * from book_user where username='".$username."'";
+$check=mysql_query($che) or die("Query failed11111");
+$chec=mysql_fetch_assoc($check);
+if(($res=mysql_num_rows($check))==0){
+	$q="User name doesn't exist";
+	header("Location:signup.php?q");
 
-
+	}
+	else{ 
+	if($chec["password"]==$password){
+	session_start();
+	$_SESSION["username"]=$username;
+	header("Location:insert.php");
+	}
+	}
 
 }
 
@@ -53,7 +70,7 @@ function fn(search){
 	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	
-	xmlhttp.open("GET","search.php?id="+search,false);
+	xmlhttp.open("GET","search.php?id="+search+"&q="+0,false);
 	xmlhttp.send();
 	var dom=xmlhttp.responseText;
 	document.getElementById('content').innerHTML=dom;
@@ -87,6 +104,23 @@ function fn3(arg) {
 	var dom=xmlhttp.responseText;
 	document.getElementById('content').innerHTML="<div id=\'imggrp\'>"+dom+"</div>";
 	}
+	
+function fff(searc){
+	
+	   if(window.XMLHttpRequest){
+	 xmlhttp= new XMLHttpRequest();
+	 }
+	 else{
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.open("GET","search.php?id="+searc+"&q="+1,false);
+	xmlhttp.send();
+	var dom=xmlhttp.responseText;  
+	document.getElementById('content').innerHTML=dom;
+	//document.getElementById('content').innerHTML="hhhhhddd";
+	
+}
 
 
 </script>
@@ -124,6 +158,13 @@ function fn3(arg) {
 Content goes here
 
 </div>
+
+
+<?php
+
+if(!isset($_SESSION["username"])){
+
+?>
 <div id="loginfield">
 <form align="right" action="index.php" method="POST">
 User ID  : 
@@ -131,10 +172,25 @@ User ID  :
 Password 
 <input type="password" name="password"><br />
 <input id= "loginbutton" type="submit" value="login" name="login" >
-</form>
+<?php }
+else{
+echo "         Hello  ".$_SESSION["username"];
+?>
+  
+
+</form> 
+<?php
+}
+?>
 </div>
 </div>
 </div>
 <script>def()</script>
+<br />
+<br />
+<pre>
+
+</pre>
+<iframe src="./vote.html" style="margin-top:20px;" />
 </body>
 </html>

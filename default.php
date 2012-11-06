@@ -37,7 +37,7 @@ $query="select image_url,title from book_details where genre like '%".$genre[$i]
 $res=mysql_query($query) or die("Querying failed... ");
 if(mysql_num_rows($res) > 0 ){
 while( $row=mysql_fetch_assoc($res) ){
-$var=$var."<img title='".$row["title"]."' width='100px' height='150px' style='clear:both;z-index:-5; ' src='./images/".$row['image_url']."' /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$var=$var."<img onclick='fff(".'"'.$row["image_url"].'"'.")'  title='".$row["title"]."' width='100px' height='150px' style='clear:both;z-index:-5; ' src='./images/".$row['image_url']."' /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
 }
 
@@ -45,6 +45,5 @@ $var=$var."<img title='".$row["title"]."' width='100px' height='150px' style='cl
 
 }
 echo $var;
-//echo "hhhhhhhhhhhhh";
 
 ?>

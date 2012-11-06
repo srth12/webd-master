@@ -1,13 +1,13 @@
 <?php
 
-//include("auth.inc.php");
+include("auth.inc.php");
 if(isset($_REQUEST["submit"])){
 
 
 
 
 mysql_connect("localhost","","") or die("could not connect to db stopping...");
-mysql_select_db("test") or die(" database selection failed");
+mysql_select_db("test") or die(" database selection failed1");
 $img=$_FILES["image"];
 $image=$_FILES["image"]['name'];
 $source=$img['tmp_name'];
@@ -39,11 +39,10 @@ die( "image uplaoding failed");
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/css.css" >
-
+<link rel="stylesheet" type="text/css" href="signup_style.css" />
 <title>Book 360deg</title>
 </head>
-<body>
+<body style="background-color:#CCC">
 
 
 
@@ -53,9 +52,9 @@ die( "image uplaoding failed");
 
 
 
-
-<div align="left"><img id="titlebar" src="./images/titlebar.jpg" width="100%" height="100px" />
+<div align="center"><img id="titlebar" src="./images/titlebar.jpg" width="100%" height="100px" />
 </div>
+<div align="center">
 <form action="insert.php" method="post" enctype="multipart/form-data"  >
 <table>
 <tr>
@@ -79,8 +78,9 @@ die( "image uplaoding failed");
 <td><input type="file" name="image"></td>
 </tr>
 <tr>
-<td colspan="2" >
-<input src="./images/titlebar.jpg" width="100px" height="10px" type="image"  value="submit" name="submit"></td>
+</div>
+<td colspan="2" align="center" >
+<input id="signupbutton" src="./images/titlebar.jpg" width="100px" height="30px" type="submit"  value="Submit" name="submit"></td>
 </table>
 
 
@@ -88,6 +88,7 @@ die( "image uplaoding failed");
 
 
 </form>
+
 <p id="response"    >
 </p>
 
@@ -115,7 +116,7 @@ function fn(){
 }
 
 
-fn();
+//fn();
 </script> 
 </body>
 </html>

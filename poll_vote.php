@@ -26,21 +26,21 @@ fputs($fp,$insertvote);
 fclose($fp);
 ?>
 
-<h2>Result:</h2>
+<h2>How People Rate Us</h2>
 <table>
 <tr>
-<td>Yes:</td>
+<td>Good</td>
 <td>
-<img src="poll.gif"
+<img src="poll1"
 width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
 height='20'>
 <?php echo(100*round($yes/($no+$yes),2)); ?>%
 </td>
 </tr>
 <tr>
-<td>No:</td>
+<td>Average</td>
 <td>
-<img src="poll.gif"
+<img src="poll1"
 width='<?php echo(100*round($no/($no+$yes),2)); ?>'
 height='20'>
 <?php echo(100*round($no/($no+$yes),2)); ?>%

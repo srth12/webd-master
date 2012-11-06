@@ -38,7 +38,7 @@ echo ("<br>");
 $i=1;
 while( ($row=mysql_fetch_assoc($res)) && ($i<50))
 {
-echo ("<img id='image' style='clear:both;' title='".$row['title']."' width='100px' height='150px' src='./images/".$row["image_url"]."' />"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+echo ("<img onclick='fff(".'"'.$row["image_url"].'"'.")' id='image' style='clear:both;' title='".$row['title']."' width='100px' height='150px' src='./images/".$row["image_url"]."' />"."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 if($i%5==0)
 {
 	echo("<br><br><br>");
